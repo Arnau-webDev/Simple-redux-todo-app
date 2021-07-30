@@ -1,0 +1,66 @@
+
+.todoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 80%;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    background-color: rgb(143, 143, 143);
+    color: white;
+    margin: 25px 0;
+
+    .leftIcon {
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .active {
+            background-color: blue;
+        }
+
+        & > div {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+                
+        }
+    }
+
+    .todoItemSelect {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: 75px;
+    }
+
+    .fas {
+        margin: 0 8px;
+        cursor: pointer;
+        transition: all .5s ease;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+
+    .fa-trash:hover {
+        color: red;
+    }
+
+    .fa-check:hover {
+        color: green;
+    }
+}
+
+.done {
+    background-color: green;
+}
